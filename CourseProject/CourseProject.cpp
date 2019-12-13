@@ -434,7 +434,7 @@ void Calculate()
 	for (int i = 0; i < n; i++)
 	{
 		stringstream stringstream1, stringstream2, stringstream3;
-		stringstream1 << floor(xGaussPar[i] * 100) / 100 << endl;
+		stringstream1 << floor(xLu[i] * 100) / 100 << endl;
 		string newString = stringstream1.str();
 		USES_CONVERSION;
 		LPWSTR pst = A2T(newString.c_str());
@@ -447,7 +447,7 @@ void Calculate()
 
 		SendMessage(gaussParList, LB_ADDSTRING, 0, (LPARAM)pst);
 
-		stringstream3 << floor(xGaussPar[i]*100)/100 << endl;
+		stringstream3 << floor(xLuPar[i]*100)/100 << endl;
 		newString = stringstream3.str();
 		pst = A2T(newString.c_str());
 
